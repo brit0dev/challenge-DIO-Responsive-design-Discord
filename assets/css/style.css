@@ -1,0 +1,67 @@
+@import url(reset.css);
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #23272a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+header {
+  background: url('/assets/images/header-bg-xl.png') center bottom no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+
+  color: var(--primary-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  text-align: center;
+  padding: 6rem 0;
+}
+
+header h1 {
+  display: none;
+}
+
+header h3 {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 3.5rem;
+
+  width: 10ch;
+}
+
+header p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+
+  max-width: 85ch;
+}
+
+.header__links {
+  display: flex;
+  gap: 1rem;
+}
+
+.header__links a {
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 2rem;
+  transition: opacity 0.3s;
+}
+.header__links a:hover {
+  opacity: 0.8;
+}
+
+.header__links .link__download {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.header__links .link__open-discord {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
