@@ -127,3 +127,12 @@ main section:nth-child(even) {
 .main__videocall-section p {
   width: 50rem;
 }
+
+footer {
+  background-color: var(--secondary-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.3rem;
+}
