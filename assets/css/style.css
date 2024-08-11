@@ -3,6 +3,9 @@
 :root {
   --primary-color: #fff;
   --secondary-color: #23272a;
+  --section-darker-bg: #f6f6f6;
+
+  --secondary-font: 'Luckiest Guy', sans-serif;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
@@ -35,7 +38,6 @@ header h3 {
 }
 
 header p {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 
   max-width: 85ch;
@@ -64,4 +66,64 @@ header p {
 .header__links .link__open-discord {
   color: var(--primary-color);
   background-color: var(--secondary-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main section {
+  color: var(--secondary-color);
+
+  padding: 2.5rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+main section div {
+  width: 21.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main section h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding: 0 0.2rem;
+}
+
+main section:nth-child(even) {
+  background-color: var(--section-darker-bg);
+}
+
+.main__channel-section div {
+  padding: 0.625rem 0;
+}
+
+.main__voice-section {
+  padding: 0;
+}
+
+.main__voice-section img,
+.main__members-section img {
+  margin: 1.7rem 0;
+}
+
+.main__videocall-section {
+  flex-direction: column;
+  text-align: center;
+}
+
+.main__videocall-section h3 {
+  font-family: var(--secondary-font);
+  width: 30rem;
+}
+
+.main__videocall-section p {
+  width: 50rem;
 }
