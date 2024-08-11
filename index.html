@@ -37,12 +37,18 @@
     <main>
       <section class="main__channel-section">
         <img
+          srcset="
+            assets/images/section01-xs.png  784w,
+            assets/images/section01-md.png 1568w
+          "
+          sizes="(max-width:576px) 784px"
           src="assets/images/section01.png"
+          class="main__section__img"
           alt="Section 1 image"
           title="Chat do discord."
         />
         <div>
-          <h3>
+          <h3 class="main__section__title">
             Crie um espaço controlado por convite onde você se sinta em casa
           </h3>
           <p>
@@ -54,7 +60,7 @@
       </section>
       <section class="main__voice-section">
         <div>
-          <h3>Aqui é fácil se encontrar</h3>
+          <h3 class="main__section__title">Aqui é fácil se encontrar</h3>
           <p>
             Entre no canal de voz quando estiver à toa. Amigos no mesmo servidor
             podem te ver e entrar imediatamente, sem nem ter que fazer a
@@ -62,19 +68,31 @@
           </p>
         </div>
         <img
-          src="assets/images/section02.png"
+          srcset="
+            assets/images/section02-xs.png  784w,
+            assets/images/section02-md.png 1568w
+          "
+          sizes="(max-width:576px) 784px"
+          src="assets/images/section02-md.png"
+          class="main__section__img"
           alt="Section 2 image"
           title="Chamadas de voz."
         />
       </section>
       <section class="main__members-section">
         <img
-          src="assets/images/section03.png"
+          srcset="
+            assets/images/section03-xs.png  784w,
+            assets/images/section03-md.png 1568w
+          "
+          sizes="(max-width:576px) 784px"
+          src="assets/images/section03-md.png"
+          class="main__section__img"
           alt="Section 3 image"
           title="Membros do grupo."
         />
         <div>
-          <h3>Para poucos e para muitos</h3>
+          <h3 class="main__section__title">Para poucos e para muitos</h3>
           <p>
             Organize qualquer comunidade com ferramentas de moderação e acesso
             personalizado a membros. Dê poderes especiais aos membros, monte
@@ -83,7 +101,11 @@
         </div>
       </section>
       <section class="main__videocall-section">
-        <h3>TECNOLOGIA DE CONEXÃO CONFIÁVEL</h3>
+        <h3
+          class="main__section__title main__videocall-section__title main__section__title--stylized"
+        >
+          TECNOLOGIA DE CONEXÃO CONFIÁVEL
+        </h3>
         <p>
           Voz e vídeo de baixa latência, para você conversar como se estivesse
           na mesma sala. Dê um joinha por vídeo, veja amigos transmitirem a
@@ -91,12 +113,18 @@
           compartilhada.
         </p>
         <img
-          src="assets/images/section04.png"
+          srcset="
+            assets/images/section04-xs.png  784w,
+            assets/images/section04-md.png 1568w
+          "
+          sizes="(max-width:576px) 784px"
+          src="assets/images/section04-md.png"
+          class="main__videocall-section__img main__section__img"
           alt="Section 4 image"
           title="Chamadas de vídeo."
         />
       </section>
     </main>
-    <footer><img src="assets/images/logo.png" alt="Discord logo" /></footer>
+    <footer><img src="assets/images/logo.svg" alt="Discord logo" /></footer>
   </body>
 </html>
